@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.android.course.tripapp.navigation_drawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.android.course.tripapp.navigation_drawer.ui.favorites.FavoritesFragment"
+        android:label="@string/menu_favorite"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.android.course.tripapp.navigation_drawer.ui.aboutus.AboutUsFragment"
+        android:label="@string/menu_aboutus"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.android.course.tripapp.navigation_drawer.ui.contactus.ContactUsFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/fragment_contact_us" />
+</navigation>
